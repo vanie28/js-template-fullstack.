@@ -31,7 +31,7 @@ function App() {
   const deleteTodo = (id) => {
     fetch(`http://localhost:5000/todos/${id}`, {
       method: "DELETE",
-    }).then((res) => {
+    }).then(() => {
       getTodos();
       // console.warn("res: in delete", res);
     });

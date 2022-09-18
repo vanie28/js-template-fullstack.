@@ -12,7 +12,7 @@ const sqldb = mysql.createPool({
 sqldb
   .getConnection()
   .then(() => {
-    console.warn("Database connected");
+    console.warn("@@@@@@@@@@@Database connected");
   })
   .catch(() => {
     console.warn(
